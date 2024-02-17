@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,125 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.jumbotron{
+  background-image: url('./assets/images/img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-image-menus{
+  background-image: url('./assets//images/about-3.jpg');
+  /* background-size: cover; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.coffee-card-img{
+  background-image: url('./../public/img3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-img{
+  background-image: url('./assets//images/about-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-img{
+  background-image: url('./assets//images/footer-1.png');
+  background-position: left bottom; /* Comma-separated values for multiple backgrounds */
+  background-repeat: no-repeat;
+}
+
+
+
+.torn-paper {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* .torn-paper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  clip-path: polygon(
+      0% 0%,
+    100% 0%,
+    100% 80%,
+    80% 100%,
+    60% 80%,
+    40% 100%,
+    20% 80%,
+    0% 100%
+  );
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 80%,
+    80% 100%,
+    60% 80%,
+    40% 100%,
+    10% 98%,
+    0% 100%
+  );
+  z-index: 1;
+} */
+.torn-paper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  padding: 20px;
+  
+  /* You can add multiple clip-paths using the clip-path property */
+  -webkit-clip-path: polygon(0% 0%, 5%  70%, 10% 0%, 15%  100%, 20% 0%, 25% 45%, 30% 0%, 35%  100%, 40% 0%, 45%  60%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  50%, 100% 0%);
+  clip-path: polygon(0% 0%, 5%  70%, 10% 0%, 15%  100%, 20% 0%, 25% 45%, 30% 0%, 35%  100%, 40% 0%, 45%  60%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  50%, 100% 0%);
+
+  /* Box shadow for a lifted effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  /* Transition for a smooth hover effect */
+  transition: transform 0.3s ease-in-out;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+
+.paper {
+  background: red;    /* Set the background color of the paper to red */
+  width: 960px;       /* Set the width of the paper to 960 pixels */
+  padding: 70px;      /* Add 70 pixels of padding inside the paper */
+  position: relative;  /* Set the position to relative for absolute positioning of pseudo-elements */
+}
+
+.paper::before,
+.paper::after {
+  content: '';        /* Add an empty content for pseudo-elements */
+  position: absolute; /* Set the position to absolute for precise placement */
+  height: 2px;        /* Set the height of the pseudo-elements to 2 pixels */
+  width: 100%;        /* Set the width of the pseudo-elements to 100% of their container */
+  left: 0;            /* Align the pseudo-elements to the left edge of their container */
+  clip-path: polygon(1% 0%, 4% 100%, 9% 0%, 13% 100%, 19% 1%, 21% 100%, 26% 5%, 30% 100%, 36% 2%, 43% 100%,
+    50% 1%, 52% 100%, 61% 0%, 69% 94%, 70% 0%, 76% 100%, 81% 0%, 84% 100%, 91% 0%, 97% 100%, 99% 3%
+  );  /* Apply a clip-path to create a torn paper effect */
+}
+
+.paper::before {
+  background-color: white;  /* Set the background color of the pseudo-element before to white */
+  top: 0;                   /* Align the pseudo-element before to the top edge of its container */
+}
+
+.paper::after {
+  background-color: red;    /* Set the background color of the pseudo-element after to red */
+  border: -2p;              /* Apply a border with a negative value (likely a typo, should be '2px' instead of '-2p') */
+} 
