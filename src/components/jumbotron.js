@@ -23,8 +23,8 @@ const Jumbotron = () =>{
     </div>
      <div className=' mt-40 flex justify-center items-center  '>
       <div>
-      <p className=' text-[#C3A27C] flex justify-center items-center text-xl'>- Welcome to Balisco Coffee Shop -</p>
-      <p className='flex justify-center items-center text-5xl my-4 uppercase font-bold text-white'>Our passion is in your coffee</p>
+      <p className=' text-[#C3A27C] flex justify-center items-center text-xl'>- Welcome to Tuba Coffee Shop -</p>
+      <p className='flex justify-center items-center text-5xl my-4 uppercase font-bold text-white'>Our passion is in your Tuba</p>
       <p className='flex justify-center items-center text-lg font-normal text-white'>Malewa is th perfect spot in Kinshasa to celebrate a special occasion</p>
       <p className='flex justify-center items-center text-lg font-normal  text-white'>or to simply head out for a bite to eate</p>
 

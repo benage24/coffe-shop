@@ -3,11 +3,13 @@ import { BiSolidCoffeeBean } from "react-icons/bi";
 const Footer=()=>{
 
     return(
-        <div className="  px-52 py-32" >
-            <div className=" grid grid-cols-4 place-item-center gap-x-8" >
-            <div className="  ">
+        <div className=" max-sm:px-4   px-52 py-32" >
+            <div className=" max-sm:grid-cols-1 grid grid-cols-4 place-item-center gap-x-8" >
+            <div className="   ">
+            <div className=" max-sm:w-full max-sm:justify-center max-sm:flex">
             <img src={require('../assets/images/logo-dark.png')} class="h-32   rounded-full" alt="Flowbite Logo" />
 
+            </div>
             <p className=' text-justify text-white py-8'>
             Welcome to our Basilico Coffee
 House. Lorem simply text amet cing elit aenean feugiat. t hendrerit mi pulvinar vel.

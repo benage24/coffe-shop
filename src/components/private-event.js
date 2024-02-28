@@ -27,18 +27,20 @@ const PrivateEvent=()=>{
     return(
         <div>
 
-          <div className=" flex w-full">
-            <div className=" w-1/2   flex justify-items-center  pl-72 ">
+          <div className=" flex w-full max-sm:h-screen  max-sm:flex-col ">
+            <div className=" max-sm:w-full max-sm:h-screen max-sm:pl-0  w-1/2 flex justify-items-center  pl-72 ">
                 <div className="relative">
-                        <div className=" bg-image-menus rounded-xl absolute left-14  w-[25rem] h-[36rem]">
-                                y
+                        <div className=" max-sm:w-[30rem]  max-sm:px-4  max-sm:relative  max-sm:left-0  rounded-xl absolute left-14  w-[25rem] ">
+                        <img src={require('../assets/images/private-event-1.jpg')} width={900} class=" rounded-xl h-[36rem] w-full   " alt="Flowbite Logo" />
+  
                             </div>
-                            <div className="coffee-card-img mr-10 mt-96 absolute w-72 h-72 rounded-lg">
-                            u
+                            <div className=" max-sm:px-4 max-sm:mt-4 max-sm:relative max-sm:w-full max-sm:h-2/3 l max-sm:mr-0    mr-10 mt-96 absolute w-72  rounded-lg">
+                            <img src={require('../assets/images/private-event-2.jpg')} class="max-sm:w-[33rem] max-sm: max-sm:h-[30rem] rounded-xl    " alt="Flowbite Logo" />
+
                          </div>
                 </div>
             </div>
-            <div className=" w-3/5 px-32 ">
+            <div className="  max-sm:mt-96 max-sm:px-4 max-sm:w-full w-3/5 px-32  ">
                
                 <div className=" flex space-x-2">
                 <BiSolidCoffeeBean className=' text-[#C3A27C] mt-1  ' />

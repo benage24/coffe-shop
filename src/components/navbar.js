@@ -41,7 +41,7 @@ function NavBar(){
             
 
 <nav class="bg-[#2D2723]  rounded-full w-10/12  border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-4">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-6">
       <div>
       <RxHamburgerMenu className=' text-white font-bold text-4xl' />
       </div>
@@ -61,10 +61,10 @@ function NavBar(){
        
       </ul>
     </div>
-    <a href="https://flowbite.com/" class=" max-sm:relative flex absolute mt-28 left-[35.5%] transform -translate-x-1/2 -translate-y-1/2 items-center space-x-3 rtl:space-x-reverse">
-        <img src={require('../assets/images/logocafe.jpg')} class="h-32   rounded-full" alt="Flowbite Logo" />
+    <div href="https://flowbite.com/" class=" max-sm:relative bg-[#FAF1E3] h-32 w-32 pl-5  rounded-full flex absolute mt-28 left-[35.5%] transform -translate-x-1/2 -translate-y-1/2 items-center space-x-3 rtl:space-x-reverse">
+        <img src={require('../assets/images/logo.png')} class="h-20     rounded-full" alt="Flowbite Logo" />
         {/* <span class="self-center  text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
-    </a>
+    </div>
 
     <div class=" max-sm:hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-14 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#2D2723] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
